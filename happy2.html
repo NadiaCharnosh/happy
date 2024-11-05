@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise</title>
+    <style>
+        html {
+            background-color: rgb(228, 208, 191);
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .block {
+            background-color: azure;
+            border-radius: 15%;
+            width: 40vw;
+            text-align: center;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 18vw;
+            text-align: center;
+            list-style: none;
+            justify-content: center;
+        }
+
+        .yes {
+            color: azure;
+
+
+
+            text-align: center;
+            list-style: none;
+            border-radius: 10%;
+            text-decoration: none;
+        }
+
+        #yes_work {
+            display: flex;
+
+        }
+
+        .no {
+            color: azure;
+
+            width: 10%;
+            text-align: center;
+            border-radius: 10%;
+            list-style: none;
+        }
+
+        button {
+            background-color: red;
+            color: azure;
+
+        }
+
+        .yes_button {
+
+            background-color: green;
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block">
+        <h1>Ви впевнені?</h1>
+        <ul>
+            <li>
+                <button class="yes_button">
+                    <a href="./happy3.html" class="yes"> Таак</a>
+                </button>
+
+            </li>
+            <li class="no">
+                <button id="we_work">ні</button>
+
+            </li>
+        </ul>
+    </div>
+    <script>
+        let clicknumber = 0;
+
+        document.getElementById("we_work").addEventListener("click", function () {
+            clicknumber++; // Збільшуємо
+
+            if (clicknumber === 1) {
+                alert("Ми ж це проходили вже..");
+            } else if (clicknumber === 2) {
+                alert("Не жамкай тутка");
+            } else if (clicknumber === 3) {
+                alert("Та не роби так Т-Т");
+            } else if (clicknumber === 4) {
+                alert("Ну все, хватить!")
+            } else if (clicknumber === 5) {
+                alert("Мені надоїло")
+                document.getElementById("we_work").style.display = "none"
+
+            }
+        });
+    </script>
+</body>
+
+</html>

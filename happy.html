@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise</title>
+    <style>
+        html {
+            background-color: rgb(228, 208, 191);
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .block {
+            background-color: azure;
+            border-radius: 15%;
+            width: 40vw;
+            text-align: center;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 18vw;
+            text-align: center;
+            list-style: none;
+        }
+
+        .yes {
+            color: azure;
+
+
+
+            text-align: center;
+            list-style: none;
+            border-radius: 10%;
+            text-decoration: none;
+        }
+
+        .no {
+            color: azure;
+
+            width: 10%;
+            text-align: center;
+            border-radius: 10%;
+            list-style: none;
+        }
+
+        button {
+            background-color: red;
+            color: azure;
+
+        }
+
+        .yes_button {
+            margin-left: 4vw;
+            background-color: green;
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block">
+        <h1>Бажаєте пограти в цікаві ігри?</h1>
+        <ul>
+            <li>
+                <button class="yes_button">
+                    <a href="./happy2.html" class="yes"> Таак</a>
+                </button>
+
+            </li>
+            <li class="no">
+                <button id="we_work">ні</button>
+
+            </li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById("we_work").addEventListener("click", function () {
+            alert("НЕ ПРАВИЛЬНА ВІДПОВІДЬ!!");
+        });
+    </script>
+</body>
+
+</html>
